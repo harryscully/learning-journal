@@ -20,7 +20,7 @@ ul {
 header {
     justify-content: space-between;
     padding: 1em;
-    width: 100vw;
+    width: 100%;
 }
 
 #logo-container img {
@@ -70,17 +70,47 @@ li a {
     color: #fff;
 }
 
-.blog-date {
+.featured .blog-date {
     order: -1;
+}
+
+.blog-date {
     font-size: 0.75rem;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.blog-title {
+.featured .blog-title {
     font-size: 2rem;
 }
 
 .blog-text {
     font-size: 1rem;
+}
+
+/* articles */
+
+.blogs {
+    padding: 2em 1em;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.5em;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.blog-post .blog-title {
+    font-size: 1.5rem;
+}
+
+.blog-post img {
+    order: -2;
+}
+
+.blog-post .blog-date {
+    order: -1;
 }
