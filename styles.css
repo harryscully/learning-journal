@@ -110,7 +110,11 @@ li a {
 }
 
 .blog-post img {
+    border-radius: 0.25em;
     width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 2;
+    object-fit: cover;
     order: -2;
     margin-bottom: 0.75em;
 }
@@ -186,7 +190,7 @@ footer {
     .featured .blog-text {
         max-width: 75%;
     }
-    
+
     /* blogs */
     .blogs {
         padding: 1.5em;
@@ -241,4 +245,8 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* footer */
+    footer {
+        font-size: 0.875rem;
+    }
 }
