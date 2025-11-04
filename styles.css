@@ -109,6 +109,7 @@ li a {
 }
 
 .blog-post img {
+    width: 100%;
     order: -2;
     margin-bottom: 0.75em;
 }
@@ -145,4 +146,31 @@ footer {
 
 .footer-copyright {
     font-weight: 200;
+}
+
+/* media queries */
+
+@media (min-width: 769px) {
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-post img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .featured .blog-text {
+        max-width: 75%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .blogs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .featured .blog-text {
+        max-width: 50%;
+    }
 }
