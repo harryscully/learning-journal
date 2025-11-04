@@ -1,9 +1,11 @@
 *, *::after, *::before {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
     margin: 0;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 /* header & nav */
@@ -12,15 +14,16 @@ header,
 #logo-container,
 ul {
     display: flex;
+    align-items: center;
 }
 
 header {
-    border: 1px dotted red;
     justify-content: space-between;
-    padding: 0.5em 1em;
+    padding: 1em;
+    width: 100vw;
 }
 
-img {
+#logo-container img {
     display: block;
     width: 1.5em;
 }
@@ -44,7 +47,6 @@ ul {
     gap: 1em;
     list-style: none;
     text-transform: uppercase;
-    font-family: "Source Sans 3", sans-serif;
     text-align: right;
     font-weight: 600;
 }
@@ -52,4 +54,33 @@ ul {
 li a {
     text-decoration: none;
     color: #090909;
+}
+
+/* featured article */
+
+.featured {
+    min-height: 300px;
+    padding: 1em;
+    background-color: #321E11;
+    background-image: url(./images/featured-article.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #fff;
+}
+
+.blog-date {
+    order: -1;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-title {
+    font-size: 2rem;
+}
+
+.blog-text {
+    font-size: 1rem;
 }
