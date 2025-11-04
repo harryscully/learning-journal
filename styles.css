@@ -1,0 +1,55 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* header & nav */
+
+header,
+#logo-container,
+ul {
+    display: flex;
+}
+
+header {
+    border: 1px dotted red;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+}
+
+img {
+    display: block;
+    width: 1.5em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#logo-container {
+    align-items: center;
+    gap: 0.5em;
+}
+
+nav {
+    font-size: 0.75rem;
+}
+
+ul {
+    gap: 1em;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Source Sans 3", sans-serif;
+    text-align: right;
+    font-weight: 600;
+}
+
+li a {
+    text-decoration: none;
+    color: #090909;
+}
